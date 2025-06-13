@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="/logout" method="post"><button type="submit" style=" position: relative; left: 90%; ">
+       Logout
+   </button></form>
+    <h1>
+        URL Shortener
+    </h1>
+    <% if (shortid) { %>
+        <h1>Generated url : http://localhost:8000/url/<%= shortid %></h1>
+    <% } %>
+    <% if (message) { %>
+        <h1 style="color: red;"><%= message %></h1>
+    <% } %>
+    <form action="/url" method="post">
+    <label for="input">Enter your url</label>
+    <input type="text" name="url" id="input" placeholder="">
+    <button type="submit">Generate</button>
+    </form>
+
+   
+</body>
+</html>

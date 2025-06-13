@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>
+        URL Shortener
+    </h1>
+    <form action="/user/login" method="post">
+    <label for="email" style="padding-right: 35px;">Enter your email</label>
+    <input type="text" name="email" id="email" placeholder="">
+    <br>
+    <label for="password" style="padding-right: 10px;">Enter your password</label>
+    <input type="text" name="password" id="password" placeholder="">
+    <br>
+    <button type="submit">Log in</button>
+    </form>
+    <br>
+    <form action="/signUp" method="get">
+        <button type="submit">Sign Up instead</button>
+    </form>
+    <% if (message) { %>
+     <h1 style="color: red;"><%= message %></h1>
+    <% } %>
+</body>
+</html>
