@@ -19,6 +19,17 @@ A simple Express.js project that shortens URLs with user authentication using JW
 git clone https://github.com/akshW88/url-shortener.git
 cd url-shortener
 npm install
-Create a .env file in root dir with JWT_SECRET
-Have MongoDB running locally at mongodb://127.0.0.1:27017/short-url-project, or change the URL in index.js
+```
+
+Create a .env file in root dir with
+
+```bash
+JWT_SECRET=your_jwt_secret_key
+```
+
+Have MongoDB run locally at 
+
+```bash
+mongodb://127.0.0.1:27017/short-url-project
 npm start
+```
